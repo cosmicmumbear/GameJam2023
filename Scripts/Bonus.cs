@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NotEnemyButTargetP : MonoBehaviour
+public class Bonus : MonoBehaviour
 {
     
     [SerializeField] AudioClip collectingBonus;

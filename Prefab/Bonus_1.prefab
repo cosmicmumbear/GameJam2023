@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 922566310102572277}
   - component: {fileID: -8182392275342817488}
   - component: {fileID: 7534317684751343451}
+  - component: {fileID: 2295305311492093686}
   m_Layer: 0
   m_Name: Bonus_1
   m_TagString: Untagged
@@ -165,3 +166,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0041811466, y: 0}
   m_Size: {x: 0.98501503, y: 1}
   m_Direction: 0
+--- !u!114 &2295305311492093686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922566310102572235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c8f3ef62093c44e9fabdc5fd9381b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectingBonus: {fileID: 0}
+  scoreValue: 100
+  collectingBonusEffect: {fileID: 0}
+  isActive: 1

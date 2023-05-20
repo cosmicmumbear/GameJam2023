@@ -7,7 +7,7 @@ public class ScoreUpdater: MonoBehaviour
 {
     int score = 0;
     int hitScore = 0;
-    float timer = 60;
+    float timer = 15;
     [SerializeField] Text timerText;
     [SerializeField] Text scoreText;
     [SerializeField] Text hitScoreText;
