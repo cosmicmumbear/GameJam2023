@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bonus : MonoBehaviour
+public class LifeBonus : MonoBehaviour
 {
     
     [SerializeField] AudioClip collectingBonus;
-    [SerializeField] int scoreValue = 100;
+    [SerializeField] int scoreValue = 10;
     [SerializeField] ParticleSystem collectingBonusEffect;
 
     public bool isActive = true;
@@ -27,12 +27,13 @@ public class Bonus : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
        
-       if(other.tag == "Player" )
+       if(other.tag == "Player")
        {
            
-           FindObjectOfType<ScoreUpdater>().AddToScore(scoreValue);
+           FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
            Destroy(gameObject);
        } 
+       
     }
 
             

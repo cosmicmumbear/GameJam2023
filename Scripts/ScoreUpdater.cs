@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class ScoreUpdater: MonoBehaviour
 {
-    int score = 0;
-    int hitScore = 0;
+    int workScore = 0;
+    int lifeScore = 0;
     float timer = 15;
     [SerializeField] Text timerText;
-    [SerializeField] Text scoreText;
-    [SerializeField] Text hitScoreText;
+    [SerializeField] Text workScoreText;
+    [SerializeField] Text lifeScoreText;
     
     GameOverHandler gameOverHandler;
     Cutdown cutdown;
@@ -18,8 +18,8 @@ public class ScoreUpdater: MonoBehaviour
        
     void Start() 
     {
-       scoreText.text = score.ToString();
-       hitScoreText.text = hitScore.ToString();
+       workScoreText.text = workScore.ToString();
+       lifeScoreText.text = lifeScore.ToString();
       
     }
 
@@ -46,25 +46,25 @@ public class ScoreUpdater: MonoBehaviour
 
     }
       
-    public void AddToScore(int pointsToAdd)
+    public void AddToWorkScore(int workPointsToAdd)
     {
-        score += pointsToAdd;
-        scoreText.text = score.ToString();
+        workScore += workPointsToAdd;
+        workScoreText.text = workScore.ToString();
     }
 
-    public void AddToHitScore(int hitPointsToAdd)
+    public void AddToLifeScore(int lifePointsToAdd)
     {
-        hitScore += hitPointsToAdd;
-        hitScoreText.text = hitScore.ToString();
+        lifeScore += lifePointsToAdd;
+        lifeScoreText.text = lifeScore.ToString();
     }
 
-    public int GetHitScore()
+    public int GetLifeScore()
     {
-        return hitScore;
+        return lifeScore;
     }
 
-    public int GetScore()
+    public int GetWorkScore()
     {
-        return score;
+        return workScore;
     }
 }

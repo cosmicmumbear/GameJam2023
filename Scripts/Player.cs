@@ -88,5 +88,14 @@ public class Player : MonoBehaviour
         else
         {return;}
        }
+       
     }
+
+    public bool GetIsWorking()
+       {
+         if(isWork == true)
+         {return true;}
+         else
+         {return false;}
+       }
 }
