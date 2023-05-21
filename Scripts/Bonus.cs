@@ -29,22 +29,10 @@ public class Bonus : MonoBehaviour
        
        if(other.tag == "Player" )
        {
-           StartCoroutine(Die());
+           
            FindObjectOfType<ScoreUpdater>().AddToScore(scoreValue);
+           Destroy(gameObject);
        } 
-    }
-
-    IEnumerator Die()
-    {
-        isActive = false;
-        //myAnimator.SetTrigger("Dead"); 
-        
-        //AudioSource.PlayClipAtPoint(collectingBonus, Camera.main.transform.position);
-        //collectingBonusEffect.Play();
-
-        yield return new WaitForSecondsRealtime(1);
-
-        Destroy(gameObject);
     }
 
             

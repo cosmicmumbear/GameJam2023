@@ -9,16 +9,19 @@ public class Cutdown : MonoBehaviour
     [SerializeField] Text timerText;
     [SerializeField] AudioClip cutdownSFX;
 
-
+    void Start()
+    {
+        gameOverDisplay.gameObject.SetActive(false);
+    }
  
     public void CutdownOn(float timer)
     {
-        AudioSource.PlayClipAtPoint(cutdownSFX, Camera.main.transform.position);
+        //AudioSource.PlayClipAtPoint(cutdownSFX, Camera.main.transform.position);
         gameOverDisplay.gameObject.SetActive(true);
         timerText.text = Mathf.FloorToInt(timer).ToString();
              
     }
-        public void CutdownOff()
+    public void CutdownOff()
     {
         gameOverDisplay.gameObject.SetActive(false);
              
