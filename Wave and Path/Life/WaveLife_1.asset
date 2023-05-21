@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fe50b8f51ddcd344afaeac3d3f6f020, type: 3}
-  m_Name: Wave_0
+  m_Name: WaveLife_1
   m_EditorClassIdentifier: 
   bonusPrefab:
   - {fileID: 922566310102572235, guid: 6e2a078cf45475744b4d4d5bfef60571, type: 3}
   - {fileID: 922566310102572235, guid: 6e2a078cf45475744b4d4d5bfef60571, type: 3}
   - {fileID: 922566310102572235, guid: 6e2a078cf45475744b4d4d5bfef60571, type: 3}
-  pathPrefab: {fileID: 490148804310468320, guid: 5d993219a1289c947b3cf6a92854f68f, type: 3}
+  pathPrefab: {fileID: 490148804310468320, guid: d2725f14795edaf4e9556f6e9f2aabd4, type: 3}
   moveSpeed: 5
   timeBetweenBonusSpawn: 1
   spawnTimeVarience: 0.5
