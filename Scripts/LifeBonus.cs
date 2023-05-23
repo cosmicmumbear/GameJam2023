@@ -31,6 +31,7 @@ public class LifeBonus : MonoBehaviour
        {
            
            FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
+           FindObjectOfType<ScoreUpdater>().CalcGameScore();
            Destroy(gameObject);
        } 
        
