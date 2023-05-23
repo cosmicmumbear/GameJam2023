@@ -69,21 +69,20 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-       if(other.tag == "WALL" && isWork)
+       if(other.tag == "WALL_Life" )
        {
            isWork = false;
            Debug.Log("isLife now!");
-           myAnimator.SetBool("IsRunning", false);
-           myAnimator.SetTrigger("Dead"); 
-           
+           myAnimator.SetBool("IsWork", false);
+                     
        } 
        else
        {
-        if(other.tag == "WALL" && !isWork)
+        if(other.tag == "WALL_Work" )
         {
             isWork = true;
             Debug.Log("is WORKING HARD now!");
-            myAnimator.SetBool("IsRunning", true);
+            myAnimator.SetBool("IsWork", true);
         }
         else
         {return;}
