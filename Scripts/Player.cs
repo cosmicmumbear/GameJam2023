@@ -13,19 +13,23 @@ public class Player : MonoBehaviour
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
 
+    [SerializeField] AudioClip workAudio;
+    [SerializeField] AudioClip lifeAudio;
 
-    [SerializeField] AudioClip wallAudio;
+
     [SerializeField] ParticleSystem wallEffect;
     
     public bool isWork = true;
           
     GameObject wall;
+
     Animator myAnimator;
     Rigidbody2D myRigidbody;
 
     Vector2 maxBounds;
     Vector2 minBounds;
-
+  
+   
 
     void Awake()
     {
@@ -33,6 +37,8 @@ public class Player : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>(); 
         wall = GameObject.FindWithTag("WALL");
         myAnimator = GetComponent<Animator>();
+        
+      
     }
 
     void Start()
@@ -74,6 +80,9 @@ public class Player : MonoBehaviour
            isWork = false;
            Debug.Log("isLife now!");
            myAnimator.SetBool("IsWork", false);
+          
+           //AudioSource.PlayClipAtPoint(lifeAudio, Camera.main.transform.position);
+
                      
        } 
        else
@@ -83,6 +92,9 @@ public class Player : MonoBehaviour
             isWork = true;
             Debug.Log("is WORKING HARD now!");
             myAnimator.SetBool("IsWork", true);
+          
+            //AudioSource.PlayClipAtPoint(workAudio, Camera.main.transform.position);
+
         }
         else
         {return;}

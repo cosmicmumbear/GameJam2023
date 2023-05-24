@@ -83,7 +83,8 @@ MonoBehaviour:
   paddingRight: 1
   paddingTop: 2.5
   paddingBottom: 1
-  wallAudio: {fileID: 0}
+  workAudio: {fileID: 0}
+  lifeAudio: {fileID: 0}
   wallEffect: {fileID: 0}
   isWork: 1
 --- !u!50 &916669022

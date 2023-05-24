@@ -7,15 +7,19 @@ public class ScoreUpdater: MonoBehaviour
 {
     int workScore = 0;
     int lifeScore = 0;
-    int gameScore = 0;
-    float timer = 15;
+    float gameScore = 0;
+    
+    float timer = 15f;
     [SerializeField] Text timerText;
     [SerializeField] Text workScoreText;
     [SerializeField] Text lifeScoreText;
     [SerializeField] Text gameScoreText;
     
+    
     GameOverHandler gameOverHandler;
     Cutdown cutdown;
+
+  
   
        
     void Start() 
@@ -26,11 +30,22 @@ public class ScoreUpdater: MonoBehaviour
     }
 
     void Update()
-    {           
+    {    
+          if (workScore + lifeScore > 0)
+          {
+            int total = workScore + lifeScore;
+            float abs = Mathf.Abs(workScore - lifeScore);
+            gameScore = (1-Mathf.FloorToInt(abs/total)) * 100;
+            gameScoreText.text = gameScore.ToString();
+            
+            
+          } 
+
        if(timer > 1)
        {
            timer -= Time.deltaTime;
            timerText.text = Mathf.FloorToInt(timer).ToString();
+           
        
             if(timer < 4 )
             {  
@@ -60,23 +75,5 @@ public class ScoreUpdater: MonoBehaviour
         lifeScoreText.text = lifeScore.ToString();
     }
 
-    public void CalcGameScore()
-    {
-        gameScore = (1 - (Mathf.Abs(workScore - lifeScore))/(workScore+lifeScore)) * 100;
-    }
-    
-    public int GetLifeScore()
-    {
-        return lifeScore;
-    }
-
-    public int GetWorkScore()
-    {
-        return workScore;
-    }
-
-    public int GetGameScore()
-    {
-        return gameScore;
-    }
+       
 }
