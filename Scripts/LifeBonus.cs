@@ -5,9 +5,10 @@ using UnityEngine;
 public class LifeBonus : MonoBehaviour
 {
     
-    [SerializeField] AudioClip collectingBonus;
+    
     [SerializeField] int scoreValue = 10;
     [SerializeField] ParticleSystem collectingBonusEffect;
+    [SerializeField] AudioClip bonusAudio;
 
     public bool isActive = true;
           
@@ -29,12 +30,25 @@ public class LifeBonus : MonoBehaviour
        
        if(other.tag == "Player")
        {
-           
            FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
-           Destroy(gameObject);
+           StartCoroutine(Die());
        } 
        
     }
 
+    IEnumerator Die()
+    {
+        
+        collectingBonusEffect.Play();
+        AudioSource.PlayClipAtPoint(bonusAudio, Camera.main.transform.position);
+
+        yield return new WaitForSeconds(1);
+        
+        Destroy(gameObject);
+    }
+    private void OnBecameInvisible() 
+      {
+       Destroy(gameObject);
+      }
             
 }
