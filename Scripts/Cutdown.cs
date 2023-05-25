@@ -16,7 +16,7 @@ public class Cutdown : MonoBehaviour
  
     public void CutdownOn(float timer)
     {
-        //AudioSource.PlayClipAtPoint(cutdownSFX, Camera.main.transform.position);
+        AudioSource.PlayClipAtPoint(cutdownSFX, Camera.main.transform.position);
         gameOverDisplay.gameObject.SetActive(true);
         timerText.text = Mathf.FloorToInt(timer).ToString();
              

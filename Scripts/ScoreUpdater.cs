@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreUpdater: MonoBehaviour
 {
-    int workScore = 0;
-    int lifeScore = 0;
-    float gameScore = 0;
+    public int workScore = 0;
+    public int lifeScore = 0;
+    public float gameScore = 0;
     
     float timer = 15f;
     [SerializeField] Text timerText;

@@ -698,7 +698,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Font:\n\thttps://fontzone.net/download/magneto-bold\nMusic & Sounds: \nlink\t\nBackgrounds:\n\thttps://lornn.itch.io/cyberpunk-backgrounds\nCharacter:\nhttps://free-game-assets.itch.io/free-extra-animations-for-platformer-characters\nUI:\nFree
-    2D Casual UI from Unity Asset Store\n"
+    2D Casual UI from Unity Asset Store\nhttps://opengameart.org/content/generic-items\n"
 --- !u!222 &1289485362
 CanvasRenderer:
   m_ObjectHideFlags: 0
