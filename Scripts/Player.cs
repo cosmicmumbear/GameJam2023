@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     [SerializeField] ParticleSystem wallEffect;
     
     public bool isWork = true;
+    CameraShake cameraShake;
           
     GameObject wall;
 
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>(); 
         wall = GameObject.FindWithTag("WALL");
         myAnimator = GetComponent<Animator>();
+        cameraShake = Camera.main.GetComponent<CameraShake>();
         
       
     }
@@ -78,6 +80,7 @@ public class Player : MonoBehaviour
        if(other.tag == "WALL_Life" )
        {
            isWork = false;
+           ShakeCamera();
            Debug.Log("isLife now!");
            myAnimator.SetBool("IsWork", false);
           
@@ -90,6 +93,7 @@ public class Player : MonoBehaviour
         if(other.tag == "WALL_Work" )
         {
             isWork = true;
+            ShakeCamera();
             Debug.Log("is WORKING HARD now!");
             myAnimator.SetBool("IsWork", true);
           
@@ -108,5 +112,14 @@ public class Player : MonoBehaviour
          {return true;}
          else
          {return false;}
+       }
+
+
+       void ShakeCamera()
+       {
+             if(cameraShake != null)
+             {
+                cameraShake.Play();
+             }
        }
 }
