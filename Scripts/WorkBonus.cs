@@ -32,6 +32,10 @@ public class WorkBonus : MonoBehaviour
            FindObjectOfType<ScoreUpdater>().AddToWorkScore(scoreValue);
            StartCoroutine(Die());
        } 
+       else
+       {
+        return;
+       }
        
     }
 

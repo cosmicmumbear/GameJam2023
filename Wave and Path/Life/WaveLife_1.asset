@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaveLife_1
   m_EditorClassIdentifier: 
   bonusPrefab:
-  - {fileID: 922566310102572235, guid: abc7ac95b67f0df4c90679efdb6e48ef, type: 3}
+  - {fileID: 922566310102572235, guid: 8817286dcfd01f14b8e6b00971d35462, type: 3}
   pathPrefab: {fileID: 490148804310468320, guid: d2725f14795edaf4e9556f6e9f2aabd4, type: 3}
   moveSpeed: 5
   timeBetweenBonusSpawn: 1

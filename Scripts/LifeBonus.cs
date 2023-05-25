@@ -33,6 +33,7 @@ public class LifeBonus : MonoBehaviour
            FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
            StartCoroutine(Die());
        } 
+       else{        return;       }
        
     }
 

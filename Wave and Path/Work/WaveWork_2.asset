@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: WaveWork_2
   m_EditorClassIdentifier: 
   bonusPrefab:
-  - {fileID: 922566310102572235, guid: 6e2a078cf45475744b4d4d5bfef60571, type: 3}
-  - {fileID: 922566310102572235, guid: 6e2a078cf45475744b4d4d5bfef60571, type: 3}
+  - {fileID: 922566310102572235, guid: 3ebecb93a0874134bab80f85abb119bf, type: 3}
+  - {fileID: 922566310102572235, guid: 86fc4cc62ee83344d8723c7263433969, type: 3}
+  - {fileID: 922566310102572235, guid: 86fc4cc62ee83344d8723c7263433969, type: 3}
   pathPrefab: {fileID: 490148804310468320, guid: ed580b0f4d35dd142b05edf58fe7ecae, type: 3}
   moveSpeed: 7
-  timeBetweenBonusSpawn: 1
+  timeBetweenBonusSpawn: 0.2
   spawnTimeVarience: 0.5
   minSpawnTime: 0.2
