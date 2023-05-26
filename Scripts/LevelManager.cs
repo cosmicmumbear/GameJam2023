@@ -21,5 +21,15 @@ public class LevelManager : MonoBehaviour
        SceneManager.LoadScene(1);
    }
 
+        public void LoadHowToPlay()
+   {
+       SceneManager.LoadScene(3);
+   }
+
+    public void LoadLevel2()
+   {
+       SceneManager.LoadScene(4);
+   }
+
     
 }

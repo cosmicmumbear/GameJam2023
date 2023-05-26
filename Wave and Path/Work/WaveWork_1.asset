@@ -15,6 +15,7 @@ MonoBehaviour:
   bonusPrefab:
   - {fileID: 922566310102572235, guid: fb6c23b02dcfdbe4f956ea19c1151355, type: 3}
   - {fileID: 922566310102572235, guid: a759c91ec44914d41bf99e53ecec84cb, type: 3}
+  - {fileID: 922566310102572235, guid: 86fc4cc62ee83344d8723c7263433969, type: 3}
   pathPrefab: {fileID: 490148804310468320, guid: 27e1def45f357ef4c9e02910eb5fa408, type: 3}
   moveSpeed: 5
   timeBetweenBonusSpawn: 1

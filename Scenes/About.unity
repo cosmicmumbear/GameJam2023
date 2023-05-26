@@ -386,8 +386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -575, y: -902}
-  m_SizeDelta: {x: 700, y: 200}
+  m_AnchoredPosition: {x: -662, y: -988}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664048559
 MonoBehaviour:
@@ -410,9 +410,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f880fc927abdc964d9c35fed7dc9f19a, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 300
@@ -685,20 +685,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: f880fc927abdc964d9c35fed7dc9f19a, type: 3}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 70
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Font:\n\thttps://fontzone.net/download/magneto-bold\nMusic & Sounds: \nlink\t\nBackgrounds:\n\thttps://lornn.itch.io/cyberpunk-backgrounds\nCharacter:\nhttps://free-game-assets.itch.io/free-extra-animations-for-platformer-characters\nUI:\nFree
-    2D Casual UI from Unity Asset Store\nhttps://opengameart.org/content/generic-items\n"
+  m_Text: "Font: \t\t\t\t\t\t\thttps://fontzone.net/download/magneto-bold\nMusic
+    & Sounds:\t\t\tlink\t\nBackground:\t\t\t\t\thttps://lornn.itch.io/cyberpunk-backgrounds\nCharacter:
+    https://free-game-assets.itch.io/free-extra-animations-for-platformer-characters\nUI:
+    \t\t\t\t\t\t\t\tFree 2D Casual UI from Unity Asset Store\n\t\t\t\t\t\t\t\t\thttps://opengameart.org/content/generic-items\n"
 --- !u!222 &1289485362
 CanvasRenderer:
   m_ObjectHideFlags: 0

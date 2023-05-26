@@ -13,13 +13,11 @@ public class LifeBonus : MonoBehaviour
     public bool isActive = true;
           
     GameObject player;
-    //Animator myAnimator;
     Rigidbody2D myRigidbody;
     
 
     void Awake()
     {
-       // myAnimator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>(); 
         player = GameObject.FindWithTag("Player");
     }
@@ -30,10 +28,14 @@ public class LifeBonus : MonoBehaviour
        
        if(other.tag == "Player")
        {
+           
            FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
            StartCoroutine(Die());
        } 
-       else{        return;       }
+       else
+       {
+        return;
+       }
        
     }
 
@@ -50,6 +52,5 @@ public class LifeBonus : MonoBehaviour
     private void OnBecameInvisible() 
       {
        Destroy(gameObject);
-      }
-            
+      } 
 }

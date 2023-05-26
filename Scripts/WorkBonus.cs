@@ -12,13 +12,12 @@ public class WorkBonus : MonoBehaviour
     public bool isActive = true;
           
     GameObject player;
-    //Animator myAnimator;
+    
     Rigidbody2D myRigidbody;
     
 
     void Awake()
     {
-       // myAnimator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>(); 
         player = GameObject.FindWithTag("Player");
     }

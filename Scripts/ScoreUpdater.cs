@@ -9,11 +9,12 @@ public class ScoreUpdater: MonoBehaviour
     public int lifeScore = 0;
     public float gameScore = 0;
     
-    float timer = 15f;
+    float timer = 10f;
     [SerializeField] Text timerText;
     [SerializeField] Text workScoreText;
     [SerializeField] Text lifeScoreText;
     [SerializeField] Text gameScoreText;
+    
     
     
     GameOverHandler gameOverHandler;
@@ -31,14 +32,11 @@ public class ScoreUpdater: MonoBehaviour
 
     void Update()
     {    
-          if (workScore + lifeScore > 0)
+          if (workScore != 0 && lifeScore != 0)
           {
-            int total = workScore + lifeScore;
-            float abs = Mathf.Abs(workScore - lifeScore);
-            gameScore = (1-Mathf.FloorToInt(abs/total)) * 100;
+            gameScore = Mathf.Abs(workScore-lifeScore);
             gameScoreText.text = gameScore.ToString();
-            
-            
+           
           } 
 
        if(timer > 1)

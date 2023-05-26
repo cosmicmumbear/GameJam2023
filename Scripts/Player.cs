@@ -46,6 +46,12 @@ public class Player : MonoBehaviour
     void Start()
     {
         InitBounds();
+
+    }
+
+    void FixedUpdate() 
+    {
+       RotatePlayer(); 
     }
 
    
@@ -104,6 +110,11 @@ public class Player : MonoBehaviour
         {return;}
        }
        
+    }
+
+    void RotatePlayer()
+    {
+        myRigidbody.rotation += 2f;
     }
 
     public bool GetIsWorking()
