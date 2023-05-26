@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonusPrefab:
   - {fileID: 922566310102572235, guid: 9124d50811db594499206dccaddbc9ea, type: 3}
+  - {fileID: 922566310102572235, guid: 817745f8b612b794c80e1fdc4db4a4a0, type: 3}
+  - {fileID: 922566310102572235, guid: 817745f8b612b794c80e1fdc4db4a4a0, type: 3}
   pathPrefab: {fileID: 490148804310468320, guid: fbc755e5eb68d8a43abed24c32d15d07, type: 3}
-  moveSpeed: 4
+  moveSpeed: 5
   timeBetweenBonusSpawn: 1
   spawnTimeVarience: 0.5
   minSpawnTime: 0.2

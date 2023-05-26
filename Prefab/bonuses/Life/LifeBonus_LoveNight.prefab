@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610f06b360f34d848b6549c6131e31e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 100
+  scoreValue: 40
   collectingBonusEffect: {fileID: 6460330655688365105}
   bonusAudio: {fileID: 8300000, guid: 24a4469cc00338c41b5d3217aa0aeae8, type: 3}
   isActive: 1

@@ -30,4 +30,9 @@ public class GameOverHandler : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

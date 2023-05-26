@@ -51,13 +51,18 @@ public class ScoreUpdater: MonoBehaviour
                 cutdown = FindObjectOfType<Cutdown>();
                 cutdown.CutdownOn(timer);
             }
-       }
-       else
-       {
-           cutdown.CutdownOff();
-           gameOverHandler = FindObjectOfType<GameOverHandler>();
-           gameOverHandler.EndGame();
-       }
+            }
+            else if( gameScore < 200)
+            {
+                gameOverHandler = FindObjectOfType<GameOverHandler>();
+                gameOverHandler.LoadLevel2();
+            }
+            else
+            {
+                cutdown.CutdownOff();
+                gameOverHandler = FindObjectOfType<GameOverHandler>();
+                gameOverHandler.EndGame();
+            }
 
     }
       
