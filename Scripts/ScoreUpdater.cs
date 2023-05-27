@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreUpdater: MonoBehaviour
 {
     public int workScore = 0;
     public int lifeScore = 0;
     public float gameScore = 0;
+    Scene scene;
     
     float timer = 10f;
     [SerializeField] Text timerText;
     [SerializeField] Text workScoreText;
     [SerializeField] Text lifeScoreText;
     [SerializeField] Text gameScoreText;
-    
+   
     
     
     GameOverHandler gameOverHandler;
@@ -28,6 +30,8 @@ public class ScoreUpdater: MonoBehaviour
        workScoreText.text = workScore.ToString();
        lifeScoreText.text = lifeScore.ToString();
        gameScoreText.text = gameScore.ToString();
+       scene = SceneManager.GetActiveScene();
+       gameOverHandler = FindObjectOfType<GameOverHandler>();
     }
 
     void Update()
@@ -43,24 +47,27 @@ public class ScoreUpdater: MonoBehaviour
        {
            timer -= Time.deltaTime;
            timerText.text = Mathf.FloorToInt(timer).ToString();
-           
+            
        
             if(timer < 4 )
             {  
                
                 cutdown = FindObjectOfType<Cutdown>();
                 cutdown.CutdownOn(timer);
+                
             }
             }
-            else if( gameScore < 200)
+            else if(scene.buildIndex != 4 && gameScore < 100)
             {
-                gameOverHandler = FindObjectOfType<GameOverHandler>();
                 gameOverHandler.LoadLevel2();
+            }
+            else if (scene.buildIndex == 4 && gameScore < 100)
+            {
+                gameOverHandler.LoadYouWin();
             }
             else
             {
                 cutdown.CutdownOff();
-                gameOverHandler = FindObjectOfType<GameOverHandler>();
                 gameOverHandler.EndGame();
             }
 

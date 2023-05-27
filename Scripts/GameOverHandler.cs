@@ -35,4 +35,9 @@ public class GameOverHandler : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+
+    public void LoadYouWin()
+    {
+        SceneManager.LoadScene(5);
+    }
 }

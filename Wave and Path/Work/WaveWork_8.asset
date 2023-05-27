@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fe50b8f51ddcd344afaeac3d3f6f020, type: 3}
-  m_Name: WaveWork_5_Small
+  m_Name: WaveWork_8
   m_EditorClassIdentifier: 
   bonusPrefab:
-  - {fileID: 922566310102572235, guid: 3ebecb93a0874134bab80f85abb119bf, type: 3}
-  - {fileID: 922566310102572235, guid: 86fc4cc62ee83344d8723c7263433969, type: 3}
-  pathPrefab: {fileID: 490148804310468320, guid: 97e6bc7c2b62d5948becdf27ed9ec957, type: 3}
-  moveSpeed: 4.5
-  timeBetweenBonusSpawn: 1.5
-  spawnTimeVarience: 0.3
+  - {fileID: 922566310102572235, guid: fb6c23b02dcfdbe4f956ea19c1151355, type: 3}
+  - {fileID: 922566310102572235, guid: fb6c23b02dcfdbe4f956ea19c1151355, type: 3}
+  pathPrefab: {fileID: 490148804310468320, guid: 3cdb81ac203b2024bb8b26766ae1e48e, type: 3}
+  moveSpeed: 2.5
+  timeBetweenBonusSpawn: 1
+  spawnTimeVarience: 0.5
   minSpawnTime: 0.2
