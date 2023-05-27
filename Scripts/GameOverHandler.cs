@@ -10,7 +10,6 @@ public class GameOverHandler : MonoBehaviour
     [SerializeField] private GameObject gameOverDisplay;
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bonusSpawner;
-    [SerializeField] private GameObject bonusSpawner2;
     [SerializeField] private GameObject gameSesion;
     
     
@@ -20,7 +19,6 @@ public class GameOverHandler : MonoBehaviour
     {
         gameOverDisplay.gameObject.SetActive(true);
         bonusSpawner.gameObject.SetActive(false);
-        bonusSpawner2.gameObject.SetActive(false);
         player.gameObject.SetActive(false);
         
            
@@ -35,6 +33,10 @@ public class GameOverHandler : MonoBehaviour
     {
         SceneManager.LoadScene(4);
     }
+    public void LoadLevel3()
+    {
+        SceneManager.LoadScene(6);
+    }    
 
     public void LoadYouWin()
     {

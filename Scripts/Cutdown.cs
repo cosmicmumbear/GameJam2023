@@ -38,7 +38,7 @@ public class Cutdown : MonoBehaviour
 
     IEnumerator PlaySoundEvery(float t, int times)
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(26);
         
         for(int i=0;i<times;i++)
         {

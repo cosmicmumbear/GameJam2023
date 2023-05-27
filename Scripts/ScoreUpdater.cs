@@ -11,7 +11,7 @@ public class ScoreUpdater: MonoBehaviour
     public float gameScore = 0;
     Scene scene;
     
-    float timer = 10f;
+    float timer = 30f;
     [SerializeField] Text timerText;
     [SerializeField] Text workScoreText;
     [SerializeField] Text lifeScoreText;
@@ -57,11 +57,15 @@ public class ScoreUpdater: MonoBehaviour
                 
             }
             }
-            else if(scene.buildIndex != 4 && gameScore < 100)
+            else if(scene.buildIndex == 2 && gameScore < 100)
             {
                 gameOverHandler.LoadLevel2();
             }
             else if (scene.buildIndex == 4 && gameScore < 100)
+            {
+                gameOverHandler.LoadLevel3();
+            }
+            else if (scene.buildIndex == 6 && gameScore < 100)
             {
                 gameOverHandler.LoadYouWin();
             }

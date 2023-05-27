@@ -9,6 +9,7 @@ public class LifeBonus : MonoBehaviour
     [SerializeField] int scoreValue = 10;
     [SerializeField] ParticleSystem collectingBonusEffect;
     [SerializeField] AudioClip bonusAudio;
+    SpriteRenderer spriteRenderer;
 
     public bool isActive = true;
           
@@ -20,17 +21,21 @@ public class LifeBonus : MonoBehaviour
     {
         myRigidbody = GetComponent<Rigidbody2D>(); 
         player = GameObject.FindWithTag("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
     }
 
        
     void OnTriggerEnter2D(Collider2D other)
     {
        
-       if(other.tag == "Player")
+       if(other.tag == "Player" && isActive)
        {
            
            FindObjectOfType<ScoreUpdater>().AddToLifeScore(scoreValue);
+           isActive = false;
            StartCoroutine(Die());
+           spriteRenderer.enabled = false;
+           
        } 
        else
        {

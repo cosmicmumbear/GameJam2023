@@ -9,27 +9,33 @@ public class WorkBonus : MonoBehaviour
     [SerializeField] ParticleSystem collectingBonusEffect;
     [SerializeField] AudioClip bonusAudio;
 
+    SpriteRenderer spriteRenderer;
+
     public bool isActive = true;
           
     GameObject player;
     
     Rigidbody2D myRigidbody;
-    
+        
 
     void Awake()
     {
         myRigidbody = GetComponent<Rigidbody2D>(); 
         player = GameObject.FindWithTag("Player");
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
     }
 
        
         void OnTriggerEnter2D(Collider2D other)
     {
+        
        
-       if(other.tag == "Player")
+       if(other.tag == "Player" && isActive)
        {
            FindObjectOfType<ScoreUpdater>().AddToWorkScore(scoreValue);
+           isActive = false;
            StartCoroutine(Die());
+           spriteRenderer.enabled = false;
        } 
        else
        {
