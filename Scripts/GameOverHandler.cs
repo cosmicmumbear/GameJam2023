@@ -11,8 +11,13 @@ public class GameOverHandler : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bonusSpawner;
     [SerializeField] private GameObject gameSesion;
+    GameObject previousAudioSource;
     
-    
+    private void Start() 
+    {
+        previousAudioSource = GameObject.FindGameObjectWithTag("music");
+        Destroy(previousAudioSource);
+    }
 
  
     public void EndGame()

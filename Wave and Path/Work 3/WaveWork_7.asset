@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe50b8f51ddcd344afaeac3d3f6f020, type: 3}
+  m_Name: WaveWork_7
+  m_EditorClassIdentifier: 
+  bonusPrefab:
+  - {fileID: 922566310102572235, guid: 9e6fc52ff50f11a4297732cbe1ada767, type: 3}
+  - {fileID: 922566310102572235, guid: 86fc4cc62ee83344d8723c7263433969, type: 3}
+  - {fileID: 922566310102572235, guid: fb6c23b02dcfdbe4f956ea19c1151355, type: 3}
+  - {fileID: 922566310102572235, guid: 3ebecb93a0874134bab80f85abb119bf, type: 3}
+  pathPrefab: {fileID: 490148804310468320, guid: 57a8d5be455229e4f8b450bdbe5a469b, type: 3}
+  moveSpeed: 6
+  timeBetweenBonusSpawn: 0.3
+  spawnTimeVarience: 0.8
+  minSpawnTime: 0.2

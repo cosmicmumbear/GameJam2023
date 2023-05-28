@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fe50b8f51ddcd344afaeac3d3f6f020, type: 3}
+  m_Name: WaveLife_1
+  m_EditorClassIdentifier: 
+  bonusPrefab:
+  - {fileID: 922566310102572235, guid: 817745f8b612b794c80e1fdc4db4a4a0, type: 3}
+  - {fileID: 922566310102572235, guid: 8817286dcfd01f14b8e6b00971d35462, type: 3}
+  - {fileID: 922566310102572235, guid: abc7ac95b67f0df4c90679efdb6e48ef, type: 3}
+  - {fileID: 922566310102572235, guid: 817745f8b612b794c80e1fdc4db4a4a0, type: 3}
+  - {fileID: 922566310102572235, guid: abc7ac95b67f0df4c90679efdb6e48ef, type: 3}
+  pathPrefab: {fileID: 490148804310468320, guid: d2725f14795edaf4e9556f6e9f2aabd4, type: 3}
+  moveSpeed: 7
+  timeBetweenBonusSpawn: 0.3
+  spawnTimeVarience: 0.5
+  minSpawnTime: 0.2
