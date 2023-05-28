@@ -36,12 +36,11 @@ public class ScoreUpdater: MonoBehaviour
 
     void Update()
     {    
-          if (workScore != 0 && lifeScore != 0)
-          {
+         
             gameScore = Mathf.Abs(workScore-lifeScore);
             gameScoreText.text = gameScore.ToString();
            
-          } 
+    
 
        if(timer > 1)
        {

@@ -619,7 +619,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Collect as many items as you can in both work and life. \nMOVE: Use arrow
-    keys or WASD keys.\nTry to keep the balance to level up!"
+    keys or WASD keys.\nTry to keep the balance below 100 to level up!"
 --- !u!222 &1289485362
 CanvasRenderer:
   m_ObjectHideFlags: 0
